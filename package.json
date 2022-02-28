@@ -1,6 +1,6 @@
 {
   "name": "gulp-rev-html",
-  "version": "v0.1.0-beta",
+  "version": "0.1.0",
   "description": "Static asset revisioning by appending timestamp to filenames: style.css => style.css?v=1646036823",
   "author": "gzy",
   "license": "MIT",
