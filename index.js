@@ -1,4 +1,3 @@
-'use strict';
 const url = require('url');
 const through2 = require('through2');
 const PluginError = require('plugin-error');
@@ -54,18 +53,17 @@ function jsAddRev(content, time) {
   return content;
 }
 
-
 function plugin() {
-	return through2.obj(function(file, enc, cb) {
-		if (file.isNull()) {
-			cb(null, file);
-			return;
-		}
+  return through2.obj(function (file, enc, cb) {
+    if (file.isNull()) {
+      cb(null, file);
+      return;
+    }
 
-		if (file.isStream()) {
-			cb(new PluginError('gulp-rev-html', 'Streaming not supported'));
-			return;
-		}
+    if (file.isStream()) {
+      cb(new PluginError('gulp-rev-html', 'Streaming not supported'));
+      return;
+    }
 
     const fileInfo = {
       content: file.contents.toString()
@@ -80,8 +78,8 @@ function plugin() {
 
     this.push(file);
 
-		cb();
-	});
+    cb();
+  });
 };
 
 module.exports = plugin;
