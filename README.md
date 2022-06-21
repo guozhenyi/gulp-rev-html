@@ -1,7 +1,17 @@
+<p>
+  <a href="https://www.npmjs.com/package/gulp-rev-html"><img 
+  src="https://img.shields.io/npm/v/gulp-rev-html.svg?sanitize=true" alt="Version"
+  ></a>
+  <a href="https://github.com/guozhenyi/gulp-rev-html"><img 
+  src="https://img.shields.io/npm/l/gulp-rev-html.svg?sanitize=true" alt="License"
+  ></a>
+</p>
+
 # gulp-rev-html
+
 Static asset revisioning by appending timestamp to filenames: <br>
 style.css => style.css?v=1646036823<br>
-index.js  => index.js?v=1646036823
+index.js => index.js?v=1646036823
 
 ## Install
 
